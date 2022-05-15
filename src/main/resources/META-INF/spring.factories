@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.marcura.exchange.rate.configuration.MarcuraAutoConfiguration,\
+com.marcura.exchange.rate.configuration.SpringJpaAutoConfiguration
