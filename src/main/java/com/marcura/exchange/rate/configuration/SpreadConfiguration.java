@@ -2,6 +2,7 @@ package com.marcura.exchange.rate.configuration;
 
 import com.marcura.exchange.rate.dto.SpreadPercentage;
 import com.marcura.exchange.rate.repositories.spreadPercentage.SpreadPercentageRepository;
+import com.marcura.exchange.rate.service.spreadPercentage.MaxSpreadPercentageService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -13,7 +14,9 @@ import java.util.stream.Collectors;
  */
 
 /**
- * Spring auto configuration to load required external properties for the exchange rate api
+ * Spread auto configuration to persist required spread percentages to database.
+ * On application startup a in memory spread percentages map will be created.
+ * This can be used to get the spread percentage for a given currency {@link MaxSpreadPercentageService}. See method getSpread.
  */
 @Component
 public class SpreadConfiguration {
@@ -35,7 +38,7 @@ public class SpreadConfiguration {
         return inMemorySpreadPercentages;
     }
 
-    // TODO: when api gets to busy refactor to liquibase
+    // TODO: When the API gets to busy we can refactor this to liquibase
     private void loadDefaultSpreadPercentages(){
 
         if(spreadPercentageRepository.findAll().isEmpty()){

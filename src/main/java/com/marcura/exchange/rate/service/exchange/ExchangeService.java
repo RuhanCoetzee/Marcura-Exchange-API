@@ -33,7 +33,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 
 /*
- * Business internal api to manage exchange in the persistence store. This interface is framework and vendor agnostics
+ * This services implements {@link DateValidator} and {@link DateParser} and calculates the exchange rate for two given currencies by data.
  */
 
 @Service
@@ -81,7 +81,7 @@ public class ExchangeService implements DateValidator, DateParser {
     }
 
     /**
-     * Calculates the exchange rate based on the concrete implementation which is problem de
+     * Calculates the exchange rate based on the concrete implementation.
      *
      * @param from From currency code in ISO format, i.e. three letters
      * @param to   To currency code in ISO format, i.e. three letters
@@ -136,8 +136,8 @@ public class ExchangeService implements DateValidator, DateParser {
         }
 
         /**
-         * For maxium perfromnce it can be noted that no two threads should proceed when both threads are concenred bout the same currency pair.
-         * i.e. A/P where A is the base currency and P is the secondary currency. However if the two threads in question are concenred with two different currency base pairs
+         * For maximum performance it can be noted that no two threads should proceed when both threads are concerned bout the same currency pair.
+         * i.e. A/P where A is the base currency and P is the secondary currency. However if the two threads in question are concerned with two different currency base pairs
          * i.e. A/B and A/C where A is the base currency and B, C is the secondary currency then both threads can proceed. Therefore the below synchronized code makes use of
          * a two dimensional map of objects to ensure thread safety.
          */

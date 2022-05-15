@@ -1,6 +1,7 @@
 package com.marcura.exchange.rate.api.responses;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.marcura.exchange.rate.controller.ExchangeController;
 import lombok.Data;
 
 import java.util.LinkedHashMap;
@@ -10,8 +11,9 @@ import java.util.LinkedHashMap;
  */
 
 /**
- * TODO
+ * Data Object to map API GET(/exchange){@link ExchangeController} response to.
  */
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class ExchangeApiResponse {

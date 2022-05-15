@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 /**
- * Spring auto configuration to load required external properties for the exchange rate api
+ * Spring auto configuration to load required external properties for the exchange rate api.
  */
 @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 @Configuration

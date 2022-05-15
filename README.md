@@ -11,7 +11,9 @@ Java 11, Docker, docker-compose, Maven, Postman
 Recommended IDE: Jetbrains IntelliJ Idea
 
 ### Installation:
-Docker and docker-compose installation is required for postgres database to be created. 
+Docker and docker-compose installation is required for postgres database to be created.
+Inside the root of the project, enter the follow command inside terminal, docker-compose up 
+This command will trigger the docker-compose.yml configuration to create a postgres database.
 
 ### How to use:
  API (PUT /exchange) (Retrieve And Persists Latest Exchange Rates):

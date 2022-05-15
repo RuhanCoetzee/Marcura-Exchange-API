@@ -10,9 +10,9 @@ import java.util.Date;
  */
 
 /**
- * TODO
- * @author ruhancoetzee
+ * This data object is for exchange usage data.
  * */
+
 @Data
 @NoArgsConstructor
 public class ExchangeUsage {

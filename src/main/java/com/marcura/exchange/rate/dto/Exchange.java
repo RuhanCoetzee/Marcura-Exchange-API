@@ -9,9 +9,9 @@ import java.math.BigDecimal;
  */
 
 /**
- * TODO
- * @author ruhancoetzee
+ * This data object is for exchange data
  * */
+
 @Data
 public class Exchange {
 

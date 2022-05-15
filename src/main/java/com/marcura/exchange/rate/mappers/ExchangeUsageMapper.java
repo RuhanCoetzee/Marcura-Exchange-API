@@ -13,9 +13,9 @@ import java.util.List;
  */
 
 /**
- * TODO
- * @author ruhancoetzee
+ * Mapstruct mapper interface
  * */
+
 @Mapper(componentModel = "spring",
         collectionMappingStrategy = CollectionMappingStrategy.ADDER_PREFERRED,
         nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)

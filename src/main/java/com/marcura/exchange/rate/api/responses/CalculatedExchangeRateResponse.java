@@ -5,7 +5,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * TODO
+ * API response for calculated exchange rate.
  */
 
 @Data

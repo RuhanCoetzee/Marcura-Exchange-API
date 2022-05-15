@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.Scheduled;
  */
 
 /**
- * Business internal api to manage exchange in the persistence store. This interface is framework and vendor agnostics
+ * Scheduler that will automatically get the latest exchange rates once a day.
  */
 
 @Configuration
@@ -24,7 +24,7 @@ public class ExchangeRateScheduler {
     private ExchangeService exchangeService;
 
     /**
-     * beskryf wat funksie doen
+     * This is a cron expression that will load and persist the latest exchange rates once a day at 12:05 AM GMT.
      */
     @Scheduled(cron = "0 5 0 * * ?", zone = "GMT")
     public void fetchLatestExchangeRates() {

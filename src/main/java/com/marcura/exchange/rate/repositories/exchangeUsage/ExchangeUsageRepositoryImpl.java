@@ -12,6 +12,10 @@ import java.util.Optional;
 /**
  * Created by ruhancoetzee on May-2022.
  */
+
+/*
+ * Business internal api to manage exchange usage in the persistence store
+ */
 public class ExchangeUsageRepositoryImpl implements ExchangeUsageRepository {
 
     private final SpringJPAExchangeUsageRepository springJPAExchangeUsageRepository;

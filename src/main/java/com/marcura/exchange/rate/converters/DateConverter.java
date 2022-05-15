@@ -11,7 +11,7 @@ import java.util.Date;
  */
 
 /**
- * TODO
+ * Data converter to persist date formats in ISO8601 format to database.
  */
 @Converter
 public class DateConverter implements AttributeConverter<Date,String> {

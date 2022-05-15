@@ -16,9 +16,9 @@ import java.util.Objects;
  */
 
 /**
- * TODO
- * @author ruhancoetzee
+ * ExchangeID is the id mapping to the Exchange table.
  * */
+
 @Data
 @NoArgsConstructor
 @Embeddable

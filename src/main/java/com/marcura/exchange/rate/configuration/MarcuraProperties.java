@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 
 /**
- * TODO Spring auto configuration to load required external properties for the exchange rate api
+ * Data object to load required external properties for the exchange rate api
  */
 @ConfigurationProperties(prefix = "marcura")
 public class MarcuraProperties {

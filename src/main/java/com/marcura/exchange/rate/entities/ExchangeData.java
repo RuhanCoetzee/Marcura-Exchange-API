@@ -12,9 +12,9 @@ import java.math.BigDecimal;
  */
 
 /**
- * TODO
- * @author ruhancoetzee
+ *  This data class is for exchange table.
  * */
+
 @Data
 @Entity
 @Table(name = "exchange")

@@ -11,6 +11,10 @@ import java.util.Optional;
 /**
  * Created by ruhancoetzee on May-2022.
  */
+
+/*
+ * Business internal api to manage spread percentage in the persistence store
+ */
 public class SpreadPercentageRepositoryImpl implements SpreadPercentageRepository {
 
     private final SpringJPASpreadPercentageRepository springJPASpreadPercentageRepository;

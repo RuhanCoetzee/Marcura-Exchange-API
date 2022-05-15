@@ -1,6 +1,7 @@
 package com.marcura.exchange.rate.api.responses;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.marcura.exchange.rate.controller.ExchangeController;
 import lombok.Data;
 
 import java.util.Date;
@@ -10,7 +11,7 @@ import java.util.Date;
  */
 
 /**
- * TODO
+ * API success response when user manually triggered get latest exchange rates via API PUT(/exchange) {@link ExchangeController}.
  */
 
 @Data

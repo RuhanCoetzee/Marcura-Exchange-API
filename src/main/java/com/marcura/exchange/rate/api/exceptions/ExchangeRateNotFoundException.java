@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  */
 
 /**
- * TODO
+ * API Exception response for no exchange rate that was found.
  */
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
 public class ExchangeRateNotFoundException extends RuntimeException  {

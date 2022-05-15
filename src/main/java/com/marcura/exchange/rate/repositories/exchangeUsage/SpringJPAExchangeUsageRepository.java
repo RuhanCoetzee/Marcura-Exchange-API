@@ -9,6 +9,10 @@ import java.util.Optional;
 /**
  * Created by ruhancoetzee on May-2022.
  */
+
+/*
+ * Spring repository implementation api to manage exchange usage in the persistence store
+ */
 public interface SpringJPAExchangeUsageRepository extends JpaRepository<ExchangeUsageData, Integer> {
 
     Optional<ExchangeUsageData> findExchangeUsageByFromCurrencyAndToCurrencyAndDate(String fromCurrency, String toCurrency, Date date);

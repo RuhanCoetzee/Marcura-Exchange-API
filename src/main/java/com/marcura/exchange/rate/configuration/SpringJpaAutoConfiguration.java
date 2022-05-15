@@ -21,7 +21,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 
 /**
- * Spring auto configuration to load required external properties for the exchange rate api
+ * Spring auto configuration to load repositories
  */
 
 @Configuration

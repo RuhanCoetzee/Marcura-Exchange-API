@@ -10,9 +10,9 @@ import java.io.Serializable;
  */
 
 /**
- * TODO
- * @author ruhancoetzee
+ *  This data class is for spread percentage table.
  * */
+
 @Data
 @Entity
 @Table(name = "spread_percentage")

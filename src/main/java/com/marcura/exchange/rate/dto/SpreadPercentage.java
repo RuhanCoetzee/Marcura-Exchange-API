@@ -7,9 +7,9 @@ import lombok.Data;
  */
 
 /**
- * TODO
- * @author ruhancoetzee
+ * This data object is for spread percentage data.
  * */
+
 @Data
 public class SpreadPercentage {
 

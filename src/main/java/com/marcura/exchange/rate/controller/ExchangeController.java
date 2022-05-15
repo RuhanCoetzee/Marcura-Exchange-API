@@ -19,7 +19,11 @@ import java.util.Date;
 
 
 /**
- * TODO
+ * Exchange API controller.
+ * API GET(/exchange) calculateExchangeRates will calculate the exchange rate between two given currencies by date.
+ * Date is a non required parameter. If parameter date is not included calculation will default to today's date.
+ *
+ * API PUT(/exchange) will capture the latest exchange rates from external api.
  */
 @Api(value = "ExchangeController")
 @RestController

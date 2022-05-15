@@ -9,6 +9,10 @@ import java.util.Optional;
 /**
  * Created by ruhancoetzee on May-2022.
  */
+
+/*
+ * Business internal api to manage exchange in the persistence store. This interface is framework and vendor agnostics
+ */
 public interface ExchangeUsageRepository {
 
     Optional<ExchangeUsage> findExchangeUsageByFromCurrencyAndToCurrency(String fromCurrency, String toCurrency, Date date);

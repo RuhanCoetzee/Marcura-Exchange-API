@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  */
 
 /**
- * TODO
+ * API Exception response for invalid parameters.
  */
 @ResponseStatus(value = HttpStatus.BAD_REQUEST)
 public class ParameterException extends RuntimeException {
